@@ -35,7 +35,7 @@ st.write(data)
 if st.button('Prediksi'):
     try:
         # Konversi input menjadi numerik
-        inputs = np.array([[data['SquareFeet'], data['Bedrooms'], data['Bathrooms'], data['Neighborhood']], data['YearBuilt']]])
+        inputs = np.array([[data['SquareFeet'], data['Bedrooms'], data['Bathrooms'], data['Neighborhood']], data['YearBuilt']])
 
         # Lakukan prediksi
         prediksi_rumah = house_model.predict(inputs)
